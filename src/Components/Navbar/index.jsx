@@ -1,4 +1,4 @@
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box } from '@chakra-ui/react';
+import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Heading } from '@chakra-ui/react';
 import React from 'react'
 import { SiTesla } from 'react-icons/si';
 import { CiCircleQuestion } from 'react-icons/ci';
@@ -17,13 +17,13 @@ function Navbar() {
                             <AccordionItem key={i}>
                                 <h2>
                                     <AccordionButton>
-                                        <Box as='span' flex='1' textAlign='left' fontSize={15}>
-                                            {x}
+                                        <Box as='span' flex='1' textAlign='left'>
+                                            <Heading fontSize={15} fontWeight={"500"}>{x}</Heading>
                                         </Box>
                                         <AccordionIcon />
                                     </AccordionButton>
                                 </h2>
-                                <AccordionPanel pb={4} position={"absolute"}>
+                                <AccordionPanel pb={4} position={"absolute"} left={0}>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                                     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -40,9 +40,23 @@ function Navbar() {
                 {
                     navbarRightIcons.map((x, i) => {
                         return (
-                            <Box mx={2} key={i}>
+                            <Box
+                                mx={2}
+                                p={1}
+                                borderRadius={"8px"}
+                                key={i}
+                                cursor={"pointer"}
+                                bg={"transparent"}
+                                onMouseOver={(e) => {
+                                    e.currentTarget.style.backgroundColor = 'rgba( 0, 0, 0, 10%)';
+                                }}
+                                onMouseOut={(e) => {
+                                    e.currentTarget.style.backgroundColor = 'transparent';
+                                }}
+                            >
                                 {x}
                             </Box>
+
                         )
                     })
                 }
