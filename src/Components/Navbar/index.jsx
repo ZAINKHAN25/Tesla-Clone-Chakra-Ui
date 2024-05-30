@@ -1,16 +1,15 @@
 import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Heading } from '@chakra-ui/react';
 import React from 'react'
 import { SiTesla } from 'react-icons/si';
-import { CiCircleQuestion } from 'react-icons/ci';
 
 import { navbarDropDowns, navbarRightIcons } from './navbarDropdowns';
 
 function Navbar() {
     return (
-        <Box display={"flex"} px={20} py={5} justifyContent={"space-between"} alignItems={"center"}>
+        <Box width={"100vw"} display={"flex"} px={20} py={5} justifyContent={"space-between"} alignItems={"center"} flexWrap={"wrap"}>
             <SiTesla cursor={"pointer"} size={30} />
 
-            <Accordion allowToggle display={"flex"}>
+            <Accordion allowToggle display={"flex"} borderColor={"transparent"}>
                 {
                     navbarDropDowns.map((x, i) => {
                         return (
@@ -23,7 +22,7 @@ function Navbar() {
                                         <AccordionIcon />
                                     </AccordionButton>
                                 </h2>
-                                <AccordionPanel pb={4} position={"absolute"} left={0}>
+                                <AccordionPanel pb={4} px={10} position={"absolute"} left={0}>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                                     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -48,7 +47,7 @@ function Navbar() {
                                 cursor={"pointer"}
                                 bg={"transparent"}
                                 onMouseOver={(e) => {
-                                    e.currentTarget.style.backgroundColor = 'rgba( 0, 0, 0, 10%)';
+                                    e.currentTarget.style.backgroundColor = 'rgba( 0, 0, 0, 8%)';
                                 }}
                                 onMouseOut={(e) => {
                                     e.currentTarget.style.backgroundColor = 'transparent';

@@ -1,12 +1,12 @@
 import { Box } from '@chakra-ui/react';
 import './App.css';
 
-import Navbar from "./Components/Navbar/index.jsx"
+import MdoalYComponent from "./Components/MdoalYComponent/index.jsx"
 
 function App() {
   return (
     <Box width={"100vw"} minH={"100vh"}>
-      <Navbar />
+      <MdoalYComponent />
     </Box>
   );
 }
