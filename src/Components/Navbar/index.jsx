@@ -1,13 +1,13 @@
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Heading } from '@chakra-ui/react';
+import { Accordion, AccordionButton, AccordionItem, AccordionPanel, Box, Heading, Img } from '@chakra-ui/react';
 import React from 'react'
-import { SiTesla } from 'react-icons/si';
+import TeslaLogoImg from "../../assets/Tesla-Logo-Navbar.png"
 
 import { navbarDropDowns, navbarRightIcons } from './navbarDropdowns';
 
 function Navbar() {
     return (
-        <Box width={"100vw"} display={"flex"} px={20} py={5} justifyContent={"space-between"} alignItems={"center"} flexWrap={"wrap"}>
-            <SiTesla cursor={"pointer"} size={30} />
+        <Box width={"100vw"} display={"flex"} px={10} py={3} justifyContent={"space-between"} alignItems={"center"} flexWrap={"wrap"}>
+            <Img src={TeslaLogoImg} cursor={"pointer"} width={120} />
 
             <Accordion allowToggle display={"flex"} borderColor={"transparent"}>
                 {
@@ -19,7 +19,6 @@ function Navbar() {
                                         <Box as='span' flex='1' textAlign='left'>
                                             <Heading fontSize={15} fontWeight={"500"}>{x}</Heading>
                                         </Box>
-                                        <AccordionIcon />
                                     </AccordionButton>
                                 </h2>
                                 <AccordionPanel pb={4} px={10} position={"absolute"} left={0}>

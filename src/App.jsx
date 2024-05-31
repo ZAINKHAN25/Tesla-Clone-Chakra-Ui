@@ -1,12 +1,17 @@
 import { Box } from '@chakra-ui/react';
 import './App.css';
 
-import MdoalYComponent from "./Components/MdoalYComponent/index.jsx"
+import ModelYComponent from "./Components/ModelYComponent/index.jsx";
+import Model3Component from "./Components/Model3Component/index.jsx";
+
 
 function App() {
   return (
-    <Box width={"100vw"} minH={"100vh"}>
-      <MdoalYComponent />
+    <Box maxW={"100vw"} minH={"100vh"} overflowX={"hidden"} display={"flex"} flexDirection={"column"} alignItems={"center"} justifyContent={"center"}>
+
+      
+      <ModelYComponent />
+      <Model3Component />
     </Box>
   );
 }

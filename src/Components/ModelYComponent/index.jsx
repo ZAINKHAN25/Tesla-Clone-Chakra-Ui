@@ -1,20 +1,38 @@
 import { Box, Button, Heading, Text } from '@chakra-ui/react';
 import React from 'react';
 
-import Navbar from "../Navbar/index.jsx"
+import Navbar from "../Navbar/index.jsx";
+import ModelYImg from "../../assets/Model-Y.avif"
+
 
 function MdoalYComponent() {
     return (
-        <Box width={"100vw"} height={"100vh"} backgroundImage={"url(https://static1.pocketlintimages.com/wordpress/wp-content/uploads/2024/04/blue-model-y.jpg)"} backgroundSize={"cover"} display={"flex"} flexDirection={"column"} justifyContent={"start"} alignItems={"center"} position={'relative'}>
+        <Box
+            width={"100vw"}
+            height={"100vh"}
+            backgroundImage={ModelYImg}
+            backgroundSize={"cover"}
+            display={"flex"}
+            flexDirection={"column"}
+            justifyContent={"start"}
+            alignItems={"center"}
+            position={'relative'}
+            backgroundPosition={'center'}
+        >
 
             <Navbar />
 
+
             <Heading mt={10} fontSize={42} fontWeight={620}>Model Y</Heading>
 
-            <Heading fontSize={28} fontWeight={490} mt={2} display={'flex'} borderBottom={'1.5px solid black'} justifyContent={'center'} alignItems={"center"}>
-                <Text fontWeight={"600"} px={2}>0.99%</Text>
-                APR Financing
-            </Heading>
+            <Box display={"flex"} mt={2} alignItems={"center"} justifyContent={"center"}>
+
+                <Heading fontSize={28} fontWeight={490} display={'flex'} borderBottom={'1.5px solid black'} justifyContent={'center'} alignItems={"center"}>
+                    <Text fontWeight={"600"} px={2}>0.99%</Text>
+                    APR Financing
+                </Heading>
+                <Heading Heading fontSize={28} fontWeight={490} mx={3}>Ending May 31</Heading>
+            </Box>
 
             <Text display={"flex"} fontSize={17} mt={2}>From <Text mx={2} fontWeight={"bold"}>$299/mo¹</Text> Lease After Est. Gas Savings</Text>
 
