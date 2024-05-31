@@ -39,10 +39,18 @@ function MdoalYComponent() {
 
             <Box bottom={"15vh"} position={"absolute"}>
                 <Button width={250} boxShadow={'1px 1px 10px rgba(255,255,255,10%)'} bg={"white"} mx={5} color={"black"}>Order Now</Button>
-                <Button width={250} boxShadow={'1px 1px 10px rgba(255,255,255,10%)'} bg={"rgba(34,34,34, 80%)"} mx={5} color={"white"}
-                    onMouseEnter={(ele) => { ele.currentTarget.style.background = "rgba(57,60,57,70%)" }}
-                    onMouseLeave={(ele) => { ele.currentTarget.style.background = "rgba(0,0,0,70%)" }}
-                >Demo Drive</Button>
+                <Button
+                    width={250}
+                    boxShadow={'1px 1px 10px rgba(255,255,255,10%)'}
+                    bg={"rgba(34,34,34, 85%)"}
+                    mx={5}
+                    color={"white"}
+                    onMouseEnter={(ele) => { ele.currentTarget.style.background = "rgba(57,60,57,80%)" }}
+                    onMouseLeave={(ele) => { ele.currentTarget.style.background = "rgba(0,0,0,85%)" }}
+                >
+                    Demo Drive
+                </Button>
+
             </Box>
 
         </Box>
