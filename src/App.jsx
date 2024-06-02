@@ -5,6 +5,7 @@ import ModelYComponent from "./Components/ModelYComponent/index.jsx";
 import Model3Component from "./Components/Model3Component/index.jsx";
 import ModelXComponent from "./Components/ModelXComponent/index.jsx";
 import ModelSComponent from "./Components/ModelSComponent/index.jsx";
+import CyberTruckComponent from "./Components/CyberTruckComponent/index.jsx";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Model3Component />
       <ModelXComponent />
       <ModelSComponent />
+      <CyberTruckComponent />
 
     </Box>
   );
