@@ -9,6 +9,7 @@ import CyberTruckComponent from "./Components/CyberTruckComponent/index.jsx";
 import SolarPanels from "./Components/SolarPanels/index.jsx";
 import SolarRoof from "./Components/SolarRoof/index.jsx";
 import PowerWall from "./Components/PowerWall/index.jsx";
+import Accessories from "./Components/Accessories/index.jsx";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
       <SolarPanels />
       <SolarRoof />
       <PowerWall />
+      <Accessories />
 
     </Box>
   );
