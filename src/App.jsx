@@ -10,6 +10,7 @@ import SolarPanels from "./Components/SolarPanels/index.jsx";
 import SolarRoof from "./Components/SolarRoof/index.jsx";
 import PowerWall from "./Components/PowerWall/index.jsx";
 import Accessories from "./Components/Accessories/index.jsx";
+import Footer from "./Components/Footer/index.jsx";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
       <SolarRoof />
       <PowerWall />
       <Accessories />
+      <Footer />
 
     </Box>
   );
