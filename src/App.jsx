@@ -8,6 +8,7 @@ import ModelSComponent from "./Components/ModelSComponent/index.jsx";
 import CyberTruckComponent from "./Components/CyberTruckComponent/index.jsx";
 import SolarPanels from "./Components/SolarPanels/index.jsx";
 import SolarRoof from "./Components/SolarRoof/index.jsx";
+import PowerWall from "./Components/PowerWall/index.jsx";
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <CyberTruckComponent />
       <SolarPanels />
       <SolarRoof />
+      <PowerWall />
 
     </Box>
   );
