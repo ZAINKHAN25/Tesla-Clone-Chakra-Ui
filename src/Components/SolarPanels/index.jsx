@@ -63,7 +63,7 @@ function SolarPanels() {
                     onMouseEnter={(ele) => { ele.currentTarget.style.background = "rgb(57,60,57)" }}
                     onMouseLeave={(ele) => { ele.currentTarget.style.background = "#222222" }}
                 >
-                    Demo Drive
+                    Learn More
                 </Button>
 
             </Box>

@@ -7,6 +7,7 @@ import ModelXComponent from "./Components/ModelXComponent/index.jsx";
 import ModelSComponent from "./Components/ModelSComponent/index.jsx";
 import CyberTruckComponent from "./Components/CyberTruckComponent/index.jsx";
 import SolarPanels from "./Components/SolarPanels/index.jsx";
+import SolarRoof from "./Components/SolarRoof/index.jsx";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <ModelSComponent />
       <CyberTruckComponent />
       <SolarPanels />
+      <SolarRoof />
 
     </Box>
   );
