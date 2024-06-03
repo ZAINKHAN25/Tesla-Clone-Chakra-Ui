@@ -6,6 +6,7 @@ function Footer() {
     return (
         <Box
             display={"flex"}
+            letterSpacing={.7}
             flexDirection={"column"}
             justifyContent={"center"}
             alignItems={"center"}
@@ -13,7 +14,8 @@ function Footer() {
             width={"100vw"}
             color={"white"}
             pt={"8vh"}
-            pb={"3vh"}
+            pb={"4vh"}
+            fontFamily={'Roboto'}
         >
             {
                 footerData.map((x, i) => {
@@ -22,22 +24,37 @@ function Footer() {
                             key={i}
                             width={"max-content"}
                             textAlign={"center"}
-                            my={2}
+                            my={1.5}
                         >
                             <Text
                                 color={"rgba( 255, 255, 255, 80%)"}
-                                fontSize={16}
+                                fontSize={12.5}
+                                fontWeight={500}
                             >
                                 <Box as='span'><sup>{i + 1}</sup></Box> Price before estimated savings is {x}, excluding taxes and fees. Subject to change.
                             </Text>
                             <Text
-                                fontWeight={"600"}
-                                textDecor={"underline"}
+                                fontWeight={"500"}
                                 width={"max-content"}
                                 mx={"auto"}
-                                fontSize={15}
+                                fontSize={12}
+                                display={"flex"}
+                                cursor={"pointer"}
                             >
-                                Learn about est. gas savings.
+                                <Box
+                                    borderBottom={"1px solid rgba( 255, 255, 255, 70%)"}
+                                    color={"rgba( 255, 255, 255, 70%)"}
+                                    transition={"all .2s ease-in-out"}
+                                    _hover={{
+                                        color: "white",
+                                        borderBottom: "1px solid white"
+                                    }}
+                                >
+                                    Learn about est. gas savings
+                                </Box>
+                                <Text>
+                                    .
+                                </Text>
                             </Text>
                         </Box>
                     )
@@ -50,9 +67,15 @@ function Footer() {
                         return (
                             <Box
                                 as='span'
-                                mx={3}
-                                fontSize={14}
+                                mx={1.5}
+                                fontSize={13}
                                 key={i}
+                                cursor={"pointer"}
+                                color={"rgba( 255, 255, 255, 80%)"}
+                                transition={"all .2s ease-in-out"}
+                                _hover={{
+                                    color: "white"
+                                }}
                             >
                                 {x}
                             </Box>

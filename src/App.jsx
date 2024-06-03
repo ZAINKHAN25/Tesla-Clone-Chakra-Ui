@@ -6,11 +6,11 @@ import Model3Component from "./Components/Model3Component/index.jsx";
 import ModelXComponent from "./Components/ModelXComponent/index.jsx";
 import ModelSComponent from "./Components/ModelSComponent/index.jsx";
 import CyberTruckComponent from "./Components/CyberTruckComponent/index.jsx";
-import SolarPanels from "./Components/SolarPanels/index.jsx";
-import SolarRoof from "./Components/SolarRoof/index.jsx";
-import PowerWall from "./Components/PowerWall/index.jsx";
-import Accessories from "./Components/Accessories/index.jsx";
-import Footer from "./Components/Footer/index.jsx";
+import SolarPanelsComponent from "./Components/SolarPanelsComponent/index.jsx";
+import SolarRoofComponent from "./Components/SolarRoofComponent/index.jsx";
+import PowerWallComponent from "./Components/PowerWallComponent/index.jsx";
+import AccessoriesComponent from "./Components/AccessoriesComponent/index.jsx";
+import FooterComponent from "./Components/FooterComponent/index.jsx";
 
 
 function App() {
@@ -30,11 +30,11 @@ function App() {
       <ModelXComponent />
       <ModelSComponent />
       <CyberTruckComponent />
-      <SolarPanels />
-      <SolarRoof />
-      <PowerWall />
-      <Accessories />
-      <Footer />
+      <SolarPanelsComponent />
+      <SolarRoofComponent />
+      <PowerWallComponent />
+      <AccessoriesComponent />
+      <FooterComponent />
 
     </Box>
   );
