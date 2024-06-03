@@ -2,6 +2,4 @@
 
 <a href="https://tesla-clone-chakra-ui.vercel.app/">Live Link</a>
 
-
-
-![Tesla Clone](https://github.com/ZAINKHAN25/Tesla-Clone-Chakra-Ui/assets/121414309/8cb9bd1a-3f98-481d-9cda-ab42eba0db76)
+![Tesla Clone With Chakra Ui](https://github.com/ZAINKHAN25/Tesla-Clone-Chakra-Ui/assets/121414309/be2de44b-0ddb-4bab-8960-a8fe7ccb0e42)
