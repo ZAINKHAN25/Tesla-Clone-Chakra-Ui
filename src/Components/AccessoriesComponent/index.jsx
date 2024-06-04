@@ -2,6 +2,7 @@ import { Box, Button, Heading } from '@chakra-ui/react';
 import React from 'react';
 
 import AccessoriesImg from "../../assets/Accessories.avif"
+import OrderNow from '../OnBtn/index.jsx';
 
 function Accessories() {
     return (
@@ -30,15 +31,7 @@ function Accessories() {
                 bottom={"18vh"}
                 position={"absolute"}
             >
-                <Button
-                    width={250}
-                    boxShadow={'1px 1px 10px rgba(255,255,255,10%)'}
-                    bg={"white"}
-                    mx={5}
-                    color={"rgba(57,60,57,80%)"}
-                >
-                    Shop Now
-                </Button>
+                <OrderNow tx={"Shop Now"} />
 
             </Box>
 

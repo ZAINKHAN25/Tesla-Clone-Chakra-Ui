@@ -3,6 +3,8 @@ import React from 'react';
 
 import Navbar from "../Navbar/index.jsx";
 import ModelYImg from "../../assets/Model-Y.avif"
+import OrderNow from '../OnBtn/index.jsx';
+import DdBtn from "../DdBtn/index.jsx"
 
 
 function MdoalYComponent() {
@@ -23,33 +25,41 @@ function MdoalYComponent() {
             <Navbar />
 
 
-            <Heading mt={10} fontSize={42} fontWeight={620}>Model Y</Heading>
+            <Heading
+                mt={10}
+                fontSize={42}
+                fontWeight={620}
+            >
+                Model Y
+            </Heading>
 
-            <Box display={"flex"} mt={2} alignItems={"center"} justifyContent={"center"}>
+            <Heading
+                fontSize={18}
+                fontWeight={600}
+                mt={2}
+                display={'flex'}
+                justifyContent={'center'}
+                alignItems={"center"}
+            >
+                From $31,490¹
+            </Heading>
 
-                <Heading fontSize={28} fontWeight={490} display={'flex'} borderBottom={'1.5px solid black'} justifyContent={'center'} alignItems={"center"}>
-                    <Text fontWeight={"600"} px={2}>0.99%</Text>
-                    APR Financing
-                </Heading>
-                <Heading Heading fontSize={28} fontWeight={490} mx={3}>Ending May 31</Heading>
-            </Box>
+            <Text
+                display={"flex"}
+                fontSize={12}
+                mt={2}
+            >
+                After Est. Savings
+            </Text>
 
-            <Text display={"flex"} fontSize={17} mt={2}>From <Text mx={2} fontWeight={"bold"}>$299/mo¹</Text> Lease After Est. Gas Savings</Text>
+            <Box
+                bottom={"18vh"}
+                position={"absolute"}
+                display={"flex"}
+            >
 
-
-            <Box bottom={"15vh"} position={"absolute"}>
-                <Button width={250} boxShadow={'1px 1px 10px rgba(255,255,255,10%)'} bg={"white"} mx={5} color={"rgba(57,60,57,95%)"}>Order Now</Button>
-                <Button
-                    width={250}
-                    boxShadow={'1px 1px 10px rgba(255,255,255,10%)'}
-                    bg={"#222222"}
-                    mx={5}
-                    color={"white"}
-                    onMouseEnter={(ele) => { ele.currentTarget.style.background = "rgb(57,60,57)" }}
-                    onMouseLeave={(ele) => { ele.currentTarget.style.background = "#222222" }}
-                >
-                    Demo Drive
-                </Button>
+                <OrderNow tx={"Order Now"} />
+                <DdBtn tx={"Demo Drive"}/>
 
             </Box>
 
