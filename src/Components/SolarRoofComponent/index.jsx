@@ -1,4 +1,4 @@
-import { Box, Button, Heading } from '@chakra-ui/react';
+import { Box, Heading } from '@chakra-ui/react';
 import React from 'react';
 
 import SolarRoofImg from "../../assets/Solar Roof.avif";
@@ -45,8 +45,12 @@ function SolarRoof() {
         position={"absolute"}
         display={"flex"}
       >
-        <OrderNow tx={"Order Now"} />
-        <DdBtn tx={"Learn More"} />
+        <OrderNow
+          tx={"Order Now"}
+        />
+        <DdBtn
+          tx={"Learn More"}
+        />
 
       </Box>
 

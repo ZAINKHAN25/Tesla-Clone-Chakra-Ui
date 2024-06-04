@@ -31,7 +31,10 @@ function Accessories() {
                 bottom={"18vh"}
                 position={"absolute"}
             >
-                <OrderNow tx={"Shop Now"} />
+
+                <OrderNow
+                    tx={"Shop Now"}
+                />
 
             </Box>
 

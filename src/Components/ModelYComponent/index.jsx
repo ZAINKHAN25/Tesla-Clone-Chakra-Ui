@@ -4,7 +4,7 @@ import React from 'react';
 import Navbar from "../Navbar/index.jsx";
 import ModelYImg from "../../assets/Model-Y.avif"
 import OrderNow from '../OnBtn/index.jsx';
-import DdBtn from "../DdBtn/index.jsx"
+import DdBtn from "../DdBtn/index.jsx";
 
 
 function MdoalYComponent() {
@@ -58,8 +58,12 @@ function MdoalYComponent() {
                 display={"flex"}
             >
 
-                <OrderNow tx={"Order Now"} />
-                <DdBtn tx={"Demo Drive"}/>
+                <OrderNow
+                    tx={"Order Now"}
+                />
+                <DdBtn
+                    tx={"Demo Drive"}
+                />
 
             </Box>
 

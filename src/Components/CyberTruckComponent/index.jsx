@@ -2,7 +2,7 @@ import { Box, Button, Img } from '@chakra-ui/react';
 import React from 'react';
 
 import CyberTruckImg from "../../assets/CyberTruck.avif";
-import CyberTruckLogo from "../../assets/tesla-cybertruck8610-removebg-preview.png"
+import CyberTruckLogo from "../../assets/tesla-cybertruck8610-removebg-preview.png";
 
 function CyberTruckComponent() {
     return (

@@ -1,4 +1,4 @@
-import { Box, Button, Heading } from '@chakra-ui/react';
+import { Box, Heading } from '@chakra-ui/react';
 import React from 'react';
 
 import PowerWallImg from "../../assets/Powerwall.avif";
@@ -33,9 +33,13 @@ function Powerwall() {
                 position={"absolute"}
                 display={"flex"}
             >
-                <OrderNow tx={"Order Now"} />
-                <DdBtn tx={"Learn More"} />
-                
+
+                <OrderNow
+                    tx={"Order Now"}
+                />
+                <DdBtn
+                    tx={"Learn More"}
+                />
 
             </Box>
 

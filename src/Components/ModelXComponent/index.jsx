@@ -53,8 +53,12 @@ function Model3Component() {
                 position={"absolute"}
                 display={"flex"}
             >
-                <OrderNow tx={"Order Now"} />
-                <DdBtn tx={"Demo Drive"} />
+                <OrderNow
+                    tx={"Order Now"}
+                />
+                <DdBtn
+                    tx={"Demo Drive"}
+                />
 
             </Box>
 

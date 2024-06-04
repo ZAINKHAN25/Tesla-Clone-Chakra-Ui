@@ -1,5 +1,5 @@
-import { Box } from '@chakra-ui/react'
-import React from 'react'
+import { Box } from '@chakra-ui/react';
+import React from 'react';
 
 function OrderNow({ tx }) {
     return (
@@ -27,4 +27,4 @@ function OrderNow({ tx }) {
     )
 }
 
-export default OrderNow
+export default OrderNow;

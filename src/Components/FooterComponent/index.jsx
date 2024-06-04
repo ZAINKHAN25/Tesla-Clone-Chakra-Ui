@@ -1,6 +1,6 @@
-import { Box, Text } from '@chakra-ui/react'
-import React from 'react'
-import { footerData, footerData2 } from './Footer'
+import { Box, Text } from '@chakra-ui/react';
+import React from 'react';
+import { footerData, footerData2 } from './Footer.js';
 
 function Footer() {
     return (
@@ -31,7 +31,12 @@ function Footer() {
                                 fontSize={12.5}
                                 fontWeight={500}
                             >
-                                <Box as='span'><sup>{i + 1}</sup></Box> Price before estimated savings is {x}, excluding taxes and fees. Subject to change.
+                                <Box
+                                    as='span'
+                                >
+                                    <sup>{i + 1}</sup>
+                                </Box>
+                                Price before estimated savings is {x}, excluding taxes and fees. Subject to change.
                             </Text>
                             <Text
                                 fontWeight={"500"}
@@ -88,4 +93,4 @@ function Footer() {
     )
 }
 
-export default Footer
+export default Footer;

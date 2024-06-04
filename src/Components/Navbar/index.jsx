@@ -1,27 +1,59 @@
-import { Accordion, AccordionButton, AccordionItem, AccordionPanel, Box, Heading, Img } from '@chakra-ui/react';
-import React from 'react'
-import TeslaLogoImg from "../../assets/Tesla-Logo-Navbar.png"
+import React from 'react';
+import TeslaLogoImg from "../../assets/Tesla-Logo-Navbar.png";
 
-import { navbarDropDowns, navbarRightIcons } from './navbarDropdowns';
+import { navbarDropDowns, navbarRightIcons } from './navbarDropdowns.js';
+import { Accordion, AccordionButton, AccordionItem, AccordionPanel, Box, Heading, Img } from '@chakra-ui/react';
 
 function Navbar() {
     return (
-        <Box width={"100vw"} display={"flex"} px={10} py={3} justifyContent={"space-between"} alignItems={"center"} flexWrap={"wrap"}>
-            <Img src={TeslaLogoImg} cursor={"pointer"} width={120} />
+        <Box
+            width={"100vw"}
+            display={"flex"}
+            px={10}
+            py={3}
+            justifyContent={"space-between"}
+            alignItems={"center"}
+            flexWrap={"wrap"}
+        >
+            <Img
+                src={TeslaLogoImg}
+                cursor={"pointer"}
+                width={120}
+            />
 
-            <Accordion allowToggle display={"flex"} borderColor={"transparent"}>
+            <Accordion
+                allowToggle
+                display={"flex"}
+                borderColor={"transparent"}
+            >
                 {
                     navbarDropDowns.map((x, i) => {
                         return (
-                            <AccordionItem key={i}>
+                            <AccordionItem
+                                key={i}
+                            >
                                 <h2>
                                     <AccordionButton>
-                                        <Box as='span' flex='1' textAlign='left'>
-                                            <Heading fontSize={15} fontWeight={"500"}>{x}</Heading>
+                                        <Box
+                                            as={'span'}
+                                            flex={'1'}
+                                            textAlign={'left'}
+                                        >
+                                            <Heading
+                                                fontSize={15}
+                                                fontWeight={"500"}
+                                            >
+                                                {x}
+                                            </Heading>
                                         </Box>
                                     </AccordionButton>
                                 </h2>
-                                <AccordionPanel pb={4} px={10} position={"absolute"} left={0}>
+                                <AccordionPanel
+                                    pb={4}
+                                    px={10}
+                                    position={"absolute"}
+                                    left={0}
+                                >
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                                     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -34,7 +66,9 @@ function Navbar() {
 
             </Accordion>
 
-            <Box display={"flex"}>
+            <Box
+                display={"flex"}
+            >
                 {
                     navbarRightIcons.map((x, i) => {
                         return (

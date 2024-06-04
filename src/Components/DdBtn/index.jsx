@@ -1,5 +1,5 @@
-import { Box } from '@chakra-ui/react'
-import React from 'react'
+import { Box } from '@chakra-ui/react';
+import React from 'react';
 
 function DemoDrive({ tx }) {
     return (
@@ -26,4 +26,4 @@ function DemoDrive({ tx }) {
     )
 }
 
-export default DemoDrive
+export default DemoDrive;
